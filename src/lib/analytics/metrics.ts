@@ -10,6 +10,7 @@ export interface CategoryDistribution {
   category: string;
   count: number;
   percentage: number;
+  [key: string]: string | number;
 }
 
 export interface TimeToLearningData {
