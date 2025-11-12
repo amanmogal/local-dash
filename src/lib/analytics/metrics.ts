@@ -4,6 +4,7 @@ export interface SuccessRateDataPoint {
   date: string;
   successRate: number;
   targetThreshold: number;
+  [key: string]: string | number;
 }
 
 export interface CategoryDistribution {
@@ -16,6 +17,7 @@ export interface CategoryDistribution {
 export interface TimeToLearningData {
   range: string;
   count: number;
+  [key: string]: string | number;
 }
 
 export interface ROIData {
@@ -24,6 +26,7 @@ export interface ROIData {
   totalValue: number;
   roi: number;
   experimentCount: number;
+  [key: string]: string | number;
 }
 
 export interface ExperimentsOverTimeData {
@@ -32,12 +35,14 @@ export interface ExperimentsOverTimeData {
   completed: number;
   live: number;
   planning: number;
+  [key: string]: string | number;
 }
 
 export interface StatusDistribution {
   status: string;
   count: number;
   percentage: number;
+  [key: string]: string | number;
 }
 
 export const calculateSuccessRateTrend = (
@@ -250,6 +255,7 @@ export interface ScoreDistributionData {
   range: string;
   iceCount: number;
   riceCount: number;
+  [key: string]: string | number;
 }
 
 export const calculateScoreDistribution = (
@@ -320,6 +326,7 @@ export interface OutcomeDistributionData {
   outcome: string;
   count: number;
   percentage: number;
+  [key: string]: string | number;
 }
 
 export const calculateOutcomeDistribution = (

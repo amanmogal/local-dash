@@ -28,7 +28,7 @@ const retryOperation = async <T>(
 
 const toNotionProperties = (
   properties: ReturnType<typeof experimentToNotionProperties>,
-): Record<string, unknown> => properties as unknown as Record<string, unknown>;
+) => properties as any;
 
 export const syncExperimentToNotion = async (
   experiment: Experiment,
